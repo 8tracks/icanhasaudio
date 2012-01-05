@@ -41,7 +41,7 @@ static VALUE set_vbr_hard_min(VALUE self, VALUE boolean)
  * call-seq:
  *    encoder.vbr_hard_min?
  *
- *  Get the hard minimum flag. 
+ *  Get the hard minimum flag.
  */
 static VALUE get_vbr_hard_min(VALUE self)
 {
@@ -551,13 +551,13 @@ static VALUE flush(VALUE self) {
  * Write the VBR tags to +outfile+
  */
 static VALUE write_vbr_tags(VALUE self, VALUE outfile) {
-  OpenFile *fp;
-  lame_global_flags * gfp;
+  /* OpenFile *fp; */
+  /* lame_global_flags * gfp; */
 
-  GetOpenFile(outfile, fp);
+  /* GetOpenFile(outfile, fp); */
 
-  Data_Get_Struct(self, lame_global_flags, gfp);
-  lame_mp3_tags_fid(gfp, fp->f);
+  /* Data_Get_Struct(self, lame_global_flags, gfp); */
+  /* lame_mp3_tags_fid(gfp, fp->f); */
   return Qnil;
 }
 
