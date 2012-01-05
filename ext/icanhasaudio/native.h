@@ -2,7 +2,7 @@
 #define ICANHASAUDIO_H
 
 #include <ruby.h>
-#include <rubyio.h>
+#include <ruby/io.h>
 #include <lame/lame.h>
 #include <dlfcn.h>
 #include <assert.h>
